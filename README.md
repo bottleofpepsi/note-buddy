@@ -13,9 +13,10 @@ Front-end:
 * React
 
 Back-end:  
-
+* ASP.NET Core
+* C#
 Другие инструменты:  
-
+* Rational DataBase(MySQL) 
 ---
 
 Каталог Documents содержит требования к проекту и прототип UI.   
