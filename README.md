@@ -15,6 +15,7 @@ Front-end:
 Back-end:  
 * ASP.NET Core
 * C#
+
 Другие инструменты:  
 * Rational DataBase(MySQL) 
 ---
