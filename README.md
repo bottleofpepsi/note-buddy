@@ -27,11 +27,11 @@ Back-end:
 
 ### Требования:
 Браузер:  
-* Chrome 49  
-* Firefox 50  
-* Safari 10  
-* IE 10  
-* Edge 14
+* Chrome 49+  
+* Firefox 50+  
+* Safari 10+  
+* IE 10+  
+* Edge 14+
 
 ---
 
