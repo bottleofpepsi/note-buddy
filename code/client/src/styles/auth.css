@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-
 .wrapper{
     width: 100vw;
     height: 100vh;
@@ -14,8 +13,19 @@
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.75);
+    overflow: hidden;
 }
-
+.icon-wrapper{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+.icon{
+    height: 25px;
+    width: 25px;
+    color: #333;
+}
 .form{
     max-width: 430px;
     width: 100%;
@@ -37,13 +47,14 @@
     height: 52px;
     margin: 18px 0;
 }
-form .input-box input{
+form .input-box input,
+form .input-box textarea{
     height: 100%;
     width: 100%;
     outline: none;
     padding: 0 15px;
     font-size: 17px;
-    font-weight: 400;
+    font-weight: 500;
     color: #333;
     border: 1.5px solid #C7BEBE;
     border-bottom-width: 2.5px;
@@ -66,7 +77,6 @@ form h3{
 }
 .input-box.button input{
     color: #fff;
-    letter-spacing: 1px;
     border: none;
     background: #414141;
     cursor: pointer;
@@ -87,4 +97,11 @@ form .text h3 a{
 }
 form .text h3 a:hover{
     text-decoration: underline;
+}
+form .input-box.note-text{
+    height: 120px;
+}
+form .note-text textarea{
+    resize: none;
+    padding: 10px 15px;
 }
