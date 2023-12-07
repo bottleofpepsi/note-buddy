@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/auth.css";
+import "../styles/forms.css";
 
 export default class SignUp extends React.Component {
     render() {
@@ -9,7 +9,10 @@ export default class SignUp extends React.Component {
                 <h2>Регистрация</h2>
                     <form action="#">
                         <div class="input-box">
-                            <input type="text" placeholder="Никнэйм" required />
+                            <input type="email" placeholder="Email" maxLength="30" required />
+                        </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="Никнэйм" maxLength="30" required />
                         </div>
                         <div class="input-box">
                             <input type="password" minlength="4" maxlength="12" placeholder="Пароль" required />

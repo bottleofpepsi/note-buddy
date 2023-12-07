@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/auth.css";
+import "../styles/forms.css";
 import { PiNotepad } from "react-icons/pi";
 
 export default class AddSection extends React.Component {

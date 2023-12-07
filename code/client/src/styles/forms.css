@@ -21,7 +21,7 @@
     align-items: center;
     gap: 5px;
 }
-.icon-wrapper.icon{
+.icon-wrapper .icon{
     height: 25px;
     width: 25px;
     color: #333;

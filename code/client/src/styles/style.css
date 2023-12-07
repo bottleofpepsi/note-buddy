@@ -4,10 +4,17 @@
     font-family: 'Monserrat' sans-serif;
     scroll-behavior: smooth;
 }
+.app-wrapper{
+    min-height: 100vh;
+}
 button{
     cursor: pointer;
 }
+.app-wrapper > div{
+    height: calc(100vh - 65px);
+}
 header{
+    height: 65px;
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
@@ -15,6 +22,7 @@ header{
     border-bottom: 3px solid #414141;
     /* border-image: linear-gradient(90deg rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.75) 25%, rgba(0,0,0,1) 50%, rgba(0,0,0,0.75) 75%, rgba(0,0,0,0.1) 100%); */
     color: #222;
+    min-width: 700px;
 }
 header .logo{
     display: flex;
@@ -34,12 +42,11 @@ header .about:hover{
     background-color: #A9A9A9;
 }
 .globe-img{
-    width: 400px;
-    height: 400px;
+    min-width: 400px;
+    min-height: 400px;
     transform: translateX(-30px);
 }
 div .home-info{
-    margin: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,8 +56,11 @@ div .home-info{
 .info-text{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 20px;
     font-size: 20px;
+    min-width: 520px;
+    min-height: 220px;
 }
 .info-text button{
     outline: none;
@@ -66,26 +76,102 @@ div .home-info{
     transition: all 0.3s ease;
 }
 .info-text button:hover{
-    background: #101010;
+    background: #0F0F0F;
 }
 .info-text .name{
     font-size: 60px;
 }
 .vl {
     border-left: 2px solid #414141;
-    height: 500px;
+    height: 400px;
 }
-/* .wrapper{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.75);
-    overflow: hidden;
-} */
 .info-wrapper{
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+}
+.about-info,
+.github{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #222;
+}
+.about-info h1{    
+    font-size: 72px;
+    padding: 70px 0 20px 0;
+}
+.git-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.github h2{
+    font-size: 42px;
+}
+.github{
+    width: 335px;
+    gap: 20px;
+}
+.github a{
+    text-decoration: none;
+    color: #414141;
+    font-weight: 500;
+    font-size: 20px;
+}
+.git-wrapper .vl{
+    height: 300px;
+}
+.section-list{
+    min-width: 20%;
+    max-width: 20%;
+    height: 100%;
+}
+.curr-section{
+    min-width: 80%;
+    max-width: 80%;
+}
+.app{
+    display: flex;
+}
+.section-list{
+    overflow: scroll;
+    border-right: 3px solid #414141;
+}
+.section,
+.new-section{
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0 20px;
+}
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #222;
+}
+.new-section{
+    text-align: center;
+    stroke-width: 0.5px;
+    font-size: 25px;
+}
+.section-nav{
+    padding: 0 20px;
+    height: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 3px solid #414141;   
+}
+.section-nav > *{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+.curr-section{
+    overflow: scroll;
 }
