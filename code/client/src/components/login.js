@@ -12,10 +12,10 @@ export default class LogIn extends React.Component {
                             <input type="text" placeholder="Никнэйм" required />
                         </div>
                         <div class="input-box">
-                            <input type="password" placeholder="Пароль" required />
+                            <input type="password" minlength="4" maxlength="12" placeholder="Пароль" required />
                         </div>
                         <div class="input-box button">
-                            <input type="Submit" value="Войти" />
+                            <input type="button" value="Войти" />
                         </div>
                         <div class="text">
                             <h3>Впервые тут? <a href="#">Регистрация</a></h3>

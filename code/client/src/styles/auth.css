@@ -21,7 +21,7 @@
     align-items: center;
     gap: 5px;
 }
-.icon{
+.icon-wrapper.icon{
     height: 25px;
     width: 25px;
     color: #333;
@@ -62,7 +62,9 @@ form .input-box textarea{
     transition: all 0.3s ease;
 }
 .input-box input:focus,
-.input-box input:valid{
+.input-box input:valid,
+.input-box textarea:focus,
+.input-box textarea:valid{
     border-color: #414141;
 }
 form .policy{
@@ -104,4 +106,7 @@ form .input-box.note-text{
 form .note-text textarea{
     resize: none;
     padding: 10px 15px;
+}
+form .input-box.date input{
+    border: dashed 3px;
 }

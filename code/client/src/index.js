@@ -6,6 +6,7 @@ import SignUp from './components/signup';
 import LogIn from './components/login';
 import AddNote from './components/addnote';
 import AddSection from './components/addsection';
+import Home from './components/home';
 
 const root = ReactDOMClient.createRoot(document.getElementById('root'));
 
@@ -13,10 +14,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        {/* <SignUp />
-        <LogIn />
-        <AddNote />
-        <AddSection /> */}
+        <Home />
       </div>
     );
   }

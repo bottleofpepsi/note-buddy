@@ -12,13 +12,13 @@ export default class SignUp extends React.Component {
                             <input type="text" placeholder="Никнэйм" required />
                         </div>
                         <div class="input-box">
-                            <input type="password" placeholder="Пароль" required />
+                            <input type="password" minlength="4" maxlength="12" placeholder="Пароль" required />
                         </div>
                         <div class="input-box">
-                            <input type="password" placeholder="Подтверждение пароля" required />
+                            <input type="password" minlength="4" maxlength="12" placeholder="Подтверждение пароля" required />
                         </div>
                         <div class="input-box button">
-                            <input type="Submit" value="Зарегистрироваться" />
+                            <input type="button" value="Зарегистрироваться" />
                         </div>
                         <div class="text">
                             <h3>Уже есть аккаунт? <a href="#">Вход</a></h3>
