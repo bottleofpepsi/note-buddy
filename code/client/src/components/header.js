@@ -1,17 +1,17 @@
 import React from 'react';
-import * as ReactDOMClient from 'react-dom/client';
-import '../styles/style.css'
+import '../styles/style.css';
+
 import { PiNotepad } from "react-icons/pi";
 
 export default class Header extends React.Component {
   render() {
     return (
         <header>
-            <div class="logo">
+            <div className="logo">
                 <PiNotepad />
-                <span class="name">NoteBuddy</span>
+                <span className="name">NoteBuddy</span>
             </div>
-            <button class="about">О нас</button>
+            <button className="about">О нас</button>
         </header>
     );
   }

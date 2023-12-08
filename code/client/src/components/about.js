@@ -1,7 +1,5 @@
 import React from 'react';
-import * as ReactDOMClient from 'react-dom/client';
 import '../styles/style.css'
-import { LiaGlobeEuropeSolid } from "react-icons/lia";
 
 export default class About extends React.Component {
   render() {

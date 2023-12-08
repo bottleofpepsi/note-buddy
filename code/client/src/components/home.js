@@ -1,5 +1,4 @@
 import React from 'react';
-import * as ReactDOMClient from 'react-dom/client';
 import '../styles/style.css'
 
 import SignUp from '../components/signup';
@@ -9,15 +8,16 @@ import HomeInfo from './homeinfo';
 import About from './about';
 import App from './app';
 
+
 export default class Home extends React.Component {
-  render() {
-    return (
-        <div className="app-wrapper">
-            <Header />
-            {/* <HomeInfo />
-            <About /> */}
-            <App />
-        </div>
-    );
-  }
+    render() {
+        return (
+            <div className="app-wrapper">
+                <Header />
+                {/* <HomeInfo />
+                <About /> */}
+                <App />
+            </div>
+        );
+    }
 }

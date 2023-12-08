@@ -16,10 +16,10 @@ export default class AddSection extends React.Component {
                             <input type="text" placeholder="Название раздела" required />
                         </div>
                         <div class="input-box note-text">
-                            <textarea placeholder="Описание" required />
+                            <textarea placeholder="Описание" />
                         </div>
                         <div class="input-box button">
-                            <input type="button" value="Добавить заметку" />
+                            <input type="button" value="Добавить раздел" />
                         </div>
                     </form>
                 </div>
