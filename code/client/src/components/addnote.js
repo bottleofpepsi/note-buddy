@@ -11,6 +11,11 @@ export default class    AddNote extends React.Component {
             description: "",
             deadline: ""
         }
+        this.requiredFormatDate = this.requiredFormatDate.bind(this)
+    }
+    
+    requiredFormatDate(date){
+        return date.split("-").reverse().join("-");
     }
 
     render() {
@@ -23,15 +28,21 @@ export default class    AddNote extends React.Component {
                     </div>
                     <form action="#">
                         <div class="input-box note-name">
-                            <input type="text" placeholder="Название заметки" onChange={} required />
+                            <input type="text" placeholder="Название заметки" onChange={e => this.setState({title: e.target.value})} required />
                         </div>
                         <div class="input-box note-text">
-                            <textarea placeholder="Текст" required />
+                            <textarea placeholder="Текст" onChange={e => this.setState({description: e.target.value})} required />
                         </div>
-                        <div class="input-box date" id="date">
+                        <div class="input-box date" onChange={e => this.setState({deadline: this.requiredFormatDate(e.target.value)})} id="date">
                             <input type="date" placeholder="Дэдлайн" />
                         </div>
-                        <div class="input-box button">
+                        <div class="input-box button" 
+                             onClick={() => this.props.save({
+                                title: this.state.title,
+                                description: this.state.description,
+                                deadline: this.state.deadline
+                            })}
+                        >
                             <input type="button" value="Добавить заметку" />
                         </div>
                     </form>

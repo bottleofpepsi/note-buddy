@@ -4,6 +4,10 @@
     font-family: 'Monserrat' sans-serif;
     scroll-behavior: smooth;
 }
+a {
+    text-decoration: none;
+    color: #222;
+}
 .app-wrapper{
     min-height: 100vh;
 }
@@ -41,6 +45,14 @@ header .about{
 }
 header .about:hover{
     background-color: #A9A9A9;
+}
+.header-nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.profile{
+    font-size: 36px;
 }
 .globe-img{
     min-width: 400px;
@@ -101,7 +113,7 @@ div .home-info{
 }
 .about-info h1{    
     font-size: 72px;
-    padding: 70px 0 20px 0;
+    padding-bottom: 20px;
 }
 .git-wrapper{
     width: 100%;
@@ -190,6 +202,7 @@ div .home-info{
     margin-top: 30px;
     font-size: 18px;
     min-height: 100px;
+    word-wrap: break-word;
 }
 .note-list{
     display: flex;

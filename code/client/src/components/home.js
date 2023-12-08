@@ -1,5 +1,6 @@
 import React from 'react';
-import '../styles/style.css'
+import '../styles/style.css';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
 import SignUp from '../components/signup';
 import LogIn from '../components/login';
@@ -12,12 +13,16 @@ import App from './app';
 export default class Home extends React.Component {
     render() {
         return (
-            <div className="app-wrapper">
-                <Header />
-                {/* <HomeInfo />
-                <About /> */}
-                <App />
-            </div>
+            <BrowserRouter>
+                <div className="app-wrapper">
+                    <Header />
+                    <Routes>
+                        <Route path='/' element={<HomeInfo />} />
+                        <Route path='/about' element={<About />} />
+                        <Route path='/app' element={<App />} />
+                    </Routes>
+                </div>
+            </BrowserRouter>
         );
     }
 }

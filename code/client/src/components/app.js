@@ -10,7 +10,7 @@ export default class App extends React.Component {
       this.state = {
         newNote: false,
         newSection: false,
-        currentWindow: 0,
+        currentWindow: 1,
         sections: [
           {
             id: 1,
@@ -58,6 +58,8 @@ export default class App extends React.Component {
       this.deleteNote = this.deleteNote.bind(this);
       this.addNote = this.addNote.bind(this);
       this.addSection = this.addSection.bind(this);
+      this.saveNote = this.saveNote.bind(this);
+      this.saveSection = this.saveSection.bind(this);
     }
 
     changeSection(i){
@@ -82,6 +84,35 @@ export default class App extends React.Component {
       this.setState({newSection: true})
     }
 
+    saveNote(i){
+      let _sections = this.state.sections;
+      let _id = _sections[this.state.sections.findIndex(this.current)].notes.length;
+      _sections[this.state.sections.findIndex(this.current)].notes.push({
+        id: _id + 1,
+        title: i.title,
+        description: i.description,
+        deadline: i.deadline
+      });
+      this.setState({
+        newNote: false,
+        sections: _sections
+      })
+    }
+
+    saveSection(i){
+      let _sections = this.state.sections;
+      _sections.push({
+        id: _sections.length + 1,
+        title: i.title,
+        description: i.description,
+        notes: []
+      })
+      this.setState({
+        sections: _sections,
+        newSection: false
+      })
+    }
+
     current = el => el.id === this.state.currentWindow;
 
     render() {
@@ -99,6 +130,8 @@ export default class App extends React.Component {
                   newSection={this.state.newSection} 
                   add={this.addNote} 
                   delete={this.deleteNote}
+                  saveNote={this.saveNote}
+                  saveSection={this.saveSection}
               />
           </div>
       );

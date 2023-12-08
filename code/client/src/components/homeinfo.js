@@ -1,5 +1,7 @@
 import React from 'react';
 import '../styles/style.css'
+import { Link } from 'react-router-dom';
+
 import { LiaGlobeEuropeSolid } from "react-icons/lia";
 
 export default class HomeInfo extends React.Component {
@@ -11,7 +13,7 @@ export default class HomeInfo extends React.Component {
                 <p>
                     NoteBuddy – лучшее приложение<br />для ведения заметок
                 </p>
-                <span>Почему бы не<button>попробовать его прямо сейчас</button>?</span>
+                <span>Почему бы не<Link to="/app"><button>попробовать его прямо сейчас</button></Link>?</span>
             </div>
             <div className="vl"></div>
             <LiaGlobeEuropeSolid className="globe-img"/>
