@@ -11,6 +11,13 @@ import App from './app';
 
 
 export default class Home extends React.Component {
+    constructor(props){
+        super(props);
+
+        this.state = {
+            authorized: false
+        }
+    }
     render() {
         return (
             <BrowserRouter>
@@ -21,6 +28,7 @@ export default class Home extends React.Component {
                         <Route path='/about' element={<About />} />
                         <Route path='/app' element={<App />} />
                     </Routes>
+                    {/* <SignUp /> */}
                 </div>
             </BrowserRouter>
         );

@@ -46,7 +46,8 @@ header .about{
 header .about:hover{
     background-color: #A9A9A9;
 }
-.header-nav{
+.header-nav,
+.header-nav a{
     display: flex;
     align-items: center;
     gap: 20px;

@@ -23,6 +23,6 @@ export default class CurrSection extends React.Component {
                 </div>
             );
         
-        return <EmptySectionPlaceholder />
+        return <EmptySectionPlaceholder save={this.props.saveSection} newSection={this.props.newSection}/>
     }
 }
